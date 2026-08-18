@@ -21,7 +21,10 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {
+	    "http://localhost:4200",
+	    "https://facilpago-frontend.onrender.com"
+	})
 public class BloqueRestController {
 
 	private final IBloqueService bloqueService;
